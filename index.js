@@ -413,12 +413,12 @@
 // Cpmpleting React JS Netflix App ||
 //  Array Map and Fat Function
 
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-// import './Jsx file/netflix.css'
-// import Card from './Jsx file/Card_netflix_01';
-// import c_data from './Card_netflix_02'
+import './Jsx file/netflix.css'
+import Card from './Jsx file/Card_netflix_01';
+import c_data from './Card_netflix_02'
 
 // function ncard(value){
 // return (
@@ -431,8 +431,8 @@
 // );
 // }
 
-// ReactDOM.render(
-//     <>
+ReactDOM.render(
+    <>
 // <h1>List of Top 5 Netflix Series in 2020. </h1>
 // {c_data.map(ncard)}
 // OR
@@ -451,17 +451,17 @@
 
 // OR
 
-// <h1><u>List of Top 5 Netflix Series in 2020.</u>  </h1>
-// {c_data.map((value) =>{
-//     return(
-//     <Card
-//     imgsrc={value.imgsrc}
-//     title={value.title}
-//     sname={value.sname}
-//     link={value.link}
-//     />
-//     )
-// })}
-//     </>
-//     ,document.getElementById('root')
-// );
+<h1><u>List of Top 5 Netflix Series in 2020.</u>  </h1>
+{c_data.map((value) =>{
+    return(
+    <Card
+    imgsrc={value.imgsrc}
+    title={value.title}
+    sname={value.sname}
+    link={value.link}
+    />
+    )
+})}
+    </>
+    ,document.getElementById('root')
+);
